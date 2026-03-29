@@ -1,5 +1,6 @@
 Hi, I'm Fred 👋
 [📄 View My Resume](./Resume_Fredrick_Owino.pdf)
+
 Data-Driven Business Analyst | Quantitative Researcher
 
 I am a professional educator and researcher with a background in Economics and a passion for business analytics. My career is built on the intersection of complex data modeling and clear communication. My goal is to turn raw information into actionable strategy.
