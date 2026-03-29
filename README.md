@@ -20,6 +20,8 @@ B.A. in Economics
 Certifications: Business Analytics using Excel, Financial & Valuation Modeling, Project Management Tools, Techniques and Agile Frameworks
 
 📫 Let's Connect!
-LinkedIn: Profile Link
+LinkedIn: [Profile Link](https://www.linkedin.com/in/ofredrick)
+
 Location: Chandler, Arizona
+
 Targeting: Business analysis and consulting roles.
