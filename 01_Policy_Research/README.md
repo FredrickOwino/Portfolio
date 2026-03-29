@@ -15,7 +15,7 @@ This research explores the effect of immigration enforcement policies on the hum
 * Implications: Beyond the immediate social impact, the research highlights the masked costs of declining dropout rates such as declining mental health in immigrant students, distrust in social institutions, and increased targeted interventions by schools.
 * Strategic Takeaway: Proves that local policy shifts can have unintended, heterogeneous, far-reaching consequences on educational attainment, parental engagement, and social mobility.
 ### Featured Files
-* [Policy Research Paper](./Policy_Research_Thesis/Final_Paper.pdf) - Detailed analysis of the 287(g) MOA and its educational outcomes.
-* [LaTex Doc](./Policy_Research_Thesis/main.tex) - Compilation of the data trends and regression results.
+* [Policy Research Paper](./01_Policy_Research_Thesis/Final_Paper.pdf) - Detailed analysis of the 287(g) MOA and its educational outcomes.
+* [LaTex Doc](./01_Policy_Research_Thesis/main.tex) - Compilation of the data trends and regression results.
 
 

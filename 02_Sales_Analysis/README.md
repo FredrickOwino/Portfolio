@@ -10,5 +10,5 @@ Developed a comprehensive sales tracking tool to transform raw transactional dat
 * Identified top-performing product categories and seasonal sales peaks to evaluate the firms discount strategy, go-to market strategy, and targeted promotions plan.
 * Streamlined the reporting process from manual data entry to an automated visual dashboard.
 ### Featured Files
-* [Interactive Dashboard](./Sales_Analysis/Sales_Analysis_Project_Insights.pdf): The interactive Excel workbook.
-* [Results & Insights](./Sales_Analysis/sales_dashboard_p1): A summary of the business recommendations based on the data.
+* [Interactive Dashboard](./02_Sales_Analysis/Sales_Analysis_Project_Insights.pdf): The interactive Excel workbook.
+* [Results & Insights](./02_Sales_Analysis/sales_dashboard_p1): A summary of the business recommendations based on the data.
