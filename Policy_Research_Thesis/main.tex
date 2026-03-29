@@ -1,0 +1,210 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{float}
+\usepackage[margin=1in]{geometry}
+\usepackage{indentfirst}
+\usepackage{setspace}
+\usepackage{url}
+\usepackage{threeparttable}
+\usepackage{amsmath}   % required for equation environments
+\usepackage{amssymb}   % optional, for symbols
+\usepackage{amsfonts}  % optional, for fonts like \mathbb
+\usepackage{natbib}
+\bibliographystyle{chicago}
+\usepackage[colorlinks=true, linkcolor=black, citecolor=black, urlcolor=black]{hyperref}
+\usepackage{url}
+
+
+\title{\textbf{Effects of Immigration Enforcement on Immigrants’ Dropout Rate}}
+\author{%
+  Fredrick O. Owino\\
+  Pomona College%
+}
+\date{April 2025}
+
+\begin{document}
+\raggedbottom
+\begin{spacing}{1.5}
+\maketitle
+\begin{abstract}
+  % 1) no indent in this environment
+
+  % 2) first paragraph
+  \noindent During the past two decades, Immigration and Customs Enforcement (ICE) has implemented the 287(g) Memorandum of Agreement (MOA) to empower state and local law enforcement officers, under federal supervision, to carry
+  out specific immigration‐enforcement functions. Prior studies, using
+  surveys and school district–county reports, have found that local ICE
+  partnerships have negative effects on educational outcomes, especially
+  in Hispanic communities. Using a county‐level, difference‐in‐differences
+  framework in Texas, this study examines how the introduction of 287(g)
+  partnerships affects immigrant dropout rates regardless of race. I find
+  that by the second year following program approval, counties with 287(g)
+  MOAs experience a 1.03-percentage-point decline in immigrant dropout
+  rates, equivalent to roughly two fewer students per county per year
+  since 2020. This reduction is driven almost entirely by high school
+  students (a 1.2-point drop), and there is no detectable change in
+  dropout rates among white students, who serve as a placebo group.
+  These findings suggest that local ICE partnerships may alter high school
+  engagement patterns within immigrant communities.
+
+  % 3) extra vertical space and no indent on the keywords
+  \vspace{0.5\baselineskip}
+  \noindent\textbf{Key words:} Immigration enforcement, 287(g) MOA, dropout rates, approved, DACA
+\end{abstract}
+\newpage
+\setlength{\parindent}{15pt}  % or 12pt if you want a smaller indent
+
+\section{Introduction}
+
+\indent Over the past two decades, federal interior immigration enforcement in the United States has undergone a fundamental transformation, expanding well beyond border patrol to enmesh local police and county jails in the deportation apparatus. The Illegal Immigration Reform and Immigrant Responsibility Act of 1996 (IIRIRA) laid the statutory groundwork for programs such as Secure Communities, E‑Verify, and 287(g), but these initiatives remained limited until the Trump administration (2017–2021) aggressively broadened their scope. Under President Trump, E‑Verify mandates proliferated across states, requiring employers to electronically verify work authorization; the 287(g) Memoranda of Agreement deputized local law enforcement officers–through Jail Enforcement Model (JEM) and Warrant Service Officer (WSO) partnerships–to identify, detain, and transfer suspected undocumented immigrants to ICE custody; and Secure Communities was reinstated, enabling automatic fingerprint sharing between local agencies and federal immigration databases \citep{amuedo2015, dee2020}. Collectively, these policies drove a 42 percent increase in ICE arrests between 2017 and 2021, reshaping daily life and civic participation for millions of foreign‑born residents.
+
+Concurrently, the United States experienced a historic surge in its foreign‑born population, which reached 47.8 million in 2023–14.3 percent of the total 335 million residents and the highest share since 1910, rivaling the 14.8 percent peak of 1890 \citep{moslimani2024}. Immigrant communities, now more racially and culturally diverse than ever, span every region of the country but remain heavily concentrated in California (10.4 million), Texas (5.2 million), Florida (4.8 million), and New York (4.5 million) \citep{moslimani2024}. Among these individuals, 17.9 million children under eighteen–equivalent to 26 percent of all U.S. children–have at least one foreign‑born parent, positioning immigrant families at the forefront of debates over K–12 education policy \citep{batalova2025}.
+
+Despite landmark legal protections–Plyler v. Doe (1982) guaranteed free public K–12 education to all students regardless of immigration status; the No Child Left Behind Act (2001) and Every Student Succeeds Act (2015) aimed to improve educational equity–immigrant students continue to confront linguistic barriers, under‑resourced schools, and enforcement‑induced fear. Prior research highlights that interior enforcement programs can disrupt labor markets \citep{cordova_nodate}, precipitate housing instability \citep{rugh2016}, and erode parental engagement \citep{amuedo2015}, yet comparatively few studies assess how these initiatives shape academic trajectories.
+
+This thesis fills that gap by examining the causal impact of 287(g) enforcement on immigrant school dropout rates across all foreign‑born communities, irrespective of race or national origin. Focusing on Texas counties from 2018 to 2022, this study employs a difference‑in‑differences framework, comparing counties that adopt 287(g) MOAs to those that do not, while controlling for county and year fixed effects. By measuring changes in dropout rates–the most extreme manifestation of chronic absenteeism–it assesses how local‑federal enforcement cooperation alters educational attainment, informs integration outcomes, and contributes to policy discussions on balancing immigration control with community well‑being.
+The central research questions are:
+\begin{enumerate}
+    \item How does the introduction of 287(g) MOA affect the overall immigrant dropout rates in Texas counties?
+    \item Do enforcement effects vary annually?
+    \item What do enforcement-related changes in dropout rates imply for broader educational equity and immigrant integration?
+\end{enumerate}
+By answering these questions, the study contributes novel evidence on the intersection of immigration enforcement and education, offering insights relevant to policymakers, educators, and advocates interested in fostering inclusive schooling environments.
+
+\section{Literature Review}
+Existing research on interior immigration enforcement has unfolded along two complementary dimensions: its socioeconomic impacts and its educational consequences.
+
+First, socioeconomic studies illustrate how heightened enforcement partnerships destabilize immigrant households and communities. \citet{cordova_nodate} uses a staggered event‑study difference‑in‑differences design to show that E‑Verify mandates negatively affect native‑born self‑employment, particularly among less‑educated male workers, while paradoxically raising self‑employment rates among Hispanic citizens in industries reliant on immigrant labor such as construction and wholesale trade. Fixed effects control for local economic conditions, and the study accounts for variations in enforcement intensity across regions. Extending this perspective to the housing sector, \citet{rugh2016} demonstrate with a quasi-experimental county‑level difference‑in‑differences analysis that 287(g) agreements led to a 0.68 percentage‑point increase in Latino foreclosure rates, thereby deepening racial wealth gaps during the 2005–2012 housing crisis. Notably, Latinos experienced foreclosure rates nearly double those of white homeowners by 2010. The study also identifies a key mechanism: in counties where undocumented immigrants were more likely to reside in owner-occupied housing (over 30\% homeownership rates), foreclosures increased by 1.16 percentage points, compared to negligible effects in low-ownership areas. This supports the authors’ argument that deportations destabilized mixed-status households by removing primary earners–typically undocumented men who contributed significantly to mortgage payments–leading to estimated household income losses of 50\%. Taken together, these findings reveal how enforcement can undermine economic security, a key resource for educational investment.
+
+Building on the macroeconomic lens, a second body of work explores psychosocial pathways linking enforcement to school engagement. Under Secure Communities, initially discontinued in 2014 but reinstated by President Trump in 2017, automatic fingerprint‑sharing protocols reduce parental involvement in school activities and elevate student anxiety as families fear reporting arrests or deportations \citep{amuedo2015}. Surveying K–12 educators, \citet{gandara2018} further quantify a 0.44‑point rise in student fear, a 0.35‑point increase in emotional problems, and a 0.22‑point decline in academic performance following intensified ICE actions and rescission of Deferred Action for Childhood Arrivals (DACA) protections, highlighting underprepared school staff and heightened anti‑immigrant bullying in predominantly White districts. They also find that with increased ICE activities, many immigrants have also failed to enroll in DACA. These studies underscore that enforcement‑induced fear and community climate shifts can directly impair students’ emotional well‑being.
+
+A third vein of research probes direct academic metrics, documenting attendance and enrollment declines linked to enforcement partnerships. \citet{bellows2021} finds that in North Carolina counties, the introduction of 287(g) MOAs causes English‑learner Hispanic students to miss an additional 15 school days per year due to fear of detention and housing instability. \citet{dee2020} extend this analysis nationally, showing significant declines in Hispanic enrollment in MOA counties likely due to family displacement and the deterrence of new Hispanic families from moving into these areas. This occurs without corresponding improvements in per‑pupil resources measured through pupil-teacher ratios and the percentage of students eligible for the National School Lunch Program (NSLP), thereby exacerbating funding constraints in Title I districts. This work establishes a clear connection between enforcement and educational disruption.
+
+Complementing these enforcement‑focused studies, longitudinal research on newcomer youth immigrants highlights broader academic trajectories. \citet{suarez2010} track immigrant adolescents for five years, categorizing them into High Achievers (22. 5\%), Improvers (11\%), Slow Decliners (24. 7\%), Precipitous Deliners (27. 8\%) and Low Achievers (14. 4\%). High Achievers maintained strong academic performance with an average GPA of 3.5, often benefiting from stable two-parent households, high parental engagement, and access to
+well-resourced schools. Improvers started with an average GPA of 2.29 but increased to 3.11 over time. They were more likely to have mentorship, supportive school environments, and lower perceived school violence. In contrast, Slow Decliners experienced a gradual drop in GPA from 2.96 to 2.53, often due to transitions into more academically demanding schools without sufficient English proficiency. Precipitous Decliners saw a sharp GPA decline from 2.9 to 1.67, typically attending highly segregated, underfunded schools with high poverty rates and reporting increased psychological distress. Low Achievers struggled consistently, with an average GPA decline of 1.44, often facing significant socioeconomic disadvantages, language barriers, and disengagement from school. Girls were more likely to be high achievers, while students experiencing multiple school transitions or being overaged for their grade were at greater risk of academic decline. The study links positive outcomes to stable family support, robust school environments, and declines in segregation, poverty concentration, and psychological distress. While not explicitly focused on enforcement, this framework illuminates mechanisms, such as family disruption and school instability, that enforcement programs may exacerbate.
+ 
+Collectively, the literature demonstrates that interior enforcement exerts far‑reaching socioeconomic and psychosocial effects that reverberate into educational settings. Yet most empirical work disaggregates by specific ethnic groups or enforcement models, stopping short of assessing how 287(g) partnerships influence academic outcomes for the heterogeneous immigrant population as a whole. By examining school dropout rates across all immigrant communities in Texas, the present study addresses this gap, offering a comprehensive evaluation of the educational consequences of enforcement for immigrant groups. I expect that in Texas, counties that adopt the 287(g) MOAs should face significant immigrant dropout rates just like in \citet{amuedo2015}.
+
+\section{Data}
+This study leverages a county-year panel dataset covering Texas counties from the 2017–2018 to the 2022–2023 academic years. The primary outcome of interest is the student dropout rate, sourced from the {Texas Education Agency (TEA)}\footnote{\url{https://tea.texas.gov/reports-and-data/school-performance/accountability-research/completion-graduation-and-dropout/completion-graduation-and-dropout-data#collapse-accordion-8751-1}}, which reports dropout statistics in alignment with the National Center for Education Statistics (NCES) definition: the percentage of students in a specified grade range who exit school without completing the academic year. TEA data includes Grade 7–12 dropout counts and rates disaggregated by student subgroups, allowing for targeted analysis of immigrant students.
+
+Following TEA guidelines, an \textit{immigrant student} is defined as an individual aged 3 to 21 who was not born in the United States (including Puerto Rico or D.C.) and who has not been enrolled in U.S. schools for more than three academic years. The TEA dataset includes masked observations to comply with the Family Educational Rights and Privacy Act (FERPA). Specifically, “–1” indicates suppressed data to protect privacy, “–3” represents cross-masking, and “.” denotes absence of students in the group. All masked or incomplete observations are dropped from this analysis to ensure accuracy and consistency.
+
+To investigate heterogeneity in enforcement impacts by education stage, dropout rates are disaggregated into middle school (grades 7–8) and high school (grades 9–12) categories. This enables the study to assess whether policy effects are more concentrated at particular educational levels.
+
+Data on county-level 287(g) immigration enforcement are obtained from the U.S. {Immigration and Customs Enforcement (ICE) website}.\footnote{\url{https://www.ice.gov/}} Counties voluntarily apply for 287(g) partnerships and, upon approval, enter into cooperative agreements with ICE. Treated counties are defined as those approved for 287(g) participation by December 2020, totaling 26 jurisdictions; all others form the control group. While several counties adopted the program later in the second Trump administration, precise application dates are unavailable.
+
+\medskip
+\input{ICESummary.tex}
+
+Two types of enforcement models are observed in the dataset: the Jail Enforcement Model (JEM) and the Warrant Service Officer (WSO) model. Under JEM, deputized officers interrogate arrestees to determine immigration status and may issue ICE detainers, enabling the agency to hold individuals up to 48 hours beyond release. In contrast, WSO authorizes officers to execute administrative ICE warrants, but does not permit interrogation of suspected noncitizens (American Immigration Council, 2025). Among treated counties, 23 adopted the JEM model and 3 adopted WSO. Table 1 presents summary statistics for key variables used in the analysis.
+
+\section{Method}
+This study employs a panel difference-in-differences (DiD) design to estimate the causal impact of 287(g) immigration enforcement partnerships on immigrant student dropout rates in Texas counties. The empirical strategy compares changes in dropout outcomes in counties that adopt 287(g) agreements with changes in counties that do not, over the period from 2017–2018 through 2022–2023. This approach parallels the methodology used by \citet{dee2020}, who investigate the effects of local immigration enforcement on Hispanic school enrollment.
+
+The baseline estimating equation is:
+
+\begin{equation}
+E_{ct} = \alpha_c + \gamma_t + \beta X_{ct} + \varepsilon_{ct}
+\label{eq:baseline}
+\end{equation}
+where $E_{ct}$ denotes the dropout rate among immigrant students in county $c$ and year $t$. County fixed effects $\alpha_c$ absorb time-invariant county-specific characteristics (e.g., demographic structure, long-standing educational resources), while year fixed effects $\gamma_t$ control for statewide policy changes, macroeconomic shocks, or other time-varying factors affecting all counties uniformly. The coefficient of interest, $\beta$, captures the average effect of 287(g) adoption on dropout rates. The variable $X_{ct}$ is an indicator equal to 1 if county $c$ had an active 287(g) agreement in year $t$, and 0 otherwise.
+
+Treatment assignment is based on a binary indicator for whether a county had entered into a 287(g) Memorandum of Agreement (MOA) with ICE by December 2020. Counties approved for MOAs by that date are considered treated, while all other counties serve as the control group. This specification estimates an average treatment effect across treated counties during the post-treatment period.
+
+To explore how the impact evolves over time and test for pre-treatment trends, I estimate a dynamic event study specification:
+
+\begin{equation}
+E_{ct} = \alpha_c + \gamma_t + \sum_{k \neq 0} \delta_k D_{c,t+k} + \varepsilon_{ct}
+\label{eq:eventstudy}
+\end{equation}
+where $D_{c,t+k}$ are dummy variables indicating the number of years before or after the county’s adoption of 287(g). The omitted category is $k = 0$, the year of adoption. The estimated coefficients $\delta_k$ trace the dynamic treatment effects and enable a visual inspection of the parallel trends assumption. A flat pre-trend (i.e., statistically insignificant coefficients for years prior to treatment) would provide evidence supporting the validity of the DiD identification strategy.
+
+The identifying assumption of the DiD approach is that, in the absence of treatment, treated and control counties would have experienced parallel changes in dropout rates. To bolster the credibility of this assumption, I limit the sample to counties with consistent dropout reporting across the study period and control for observable time-invariant heterogeneity using fixed effects. Robustness checks include excluding counties with unusually high dropout variability and testing for sensitivity to alternative definitions of the treatment window.
+
+As a falsification exercise, I estimate the same specifications using dropout rates among white students—a group unlikely to be directly affected by immigration enforcement—as a placebo outcome. If the parallel trends assumption holds and the treatment effect is valid, I expect no significant change in white dropout rates following 287(g) implementation.
+
+Finally, to assess heterogeneity, I stratify the analysis by school level—middle school (grades 7–8) versus high school (grades 9–12)—to determine whether policy effects are concentrated among older students. Standard errors are clustered at the county level to account for serial correlation in outcomes across time within counties.
+
+In addition to examining heterogeneity by school level, I further investigate whether the type of enforcement model adopted under the 287(g) program—Jail Enforcement Model (JEM) versus Warrant Service Officer (WSO)—yields differential effects on immigrant dropout rates. Following the stratification approach used to compare middle and high school impacts, I estimate separate DiD models for counties operating under each enforcement type. This allows for a comparison of whether more intrusive models like JEM, which permit interrogation and extended detainment, have more adverse consequences for educational outcomes than less invasive alternatives like WSO, which restrict officer discretion to executing administrative warrants. As with other specifications, standard errors are clustered at the county level, and all regressions include county and year fixed effects to account for unobserved heterogeneity across time and space.
+
+\section{Results}
+\subsection{Main Effects of 287(g) Partnerships on Immigrant Dropout Rates}
+Table 2 presents the baseline difference-in-differences estimates of the effect of 287(g) MOAs on immigrant dropout rates. Models (1) and (2) exclude county and year fixed effects, while Models (3) and (4) include them, allowing for control of time-invariant heterogeneity and statewide policy shocks.
+
+In Models (1) and (2), the coefficient on the treatment indicator is large and statistically significant, indicating a reduction in dropout rates of approximately 1.18 percentage points following program implementation. However, the lack of fixed effects limits causal interpretation due to potential omitted variable bias.
+
+In contrast, Model (4), which includes both county and year fixed effects and controls for event time relative to adoption, reveals a statistically significant reduction of 1.03 percentage points two years after program initiation ($p < 0.05$). This estimate is robust across specifications and suggests that ICE partnerships are associated with a meaningful decline in dropout rates among immigrant students. However, the effect of ICE partnerships is not significant during the first year but increases gradually until the third year post-enforcement. The F-test fails to reject the null that the event study coefficients are jointly zero in both Models (3) and (4), indicating no strong pre-trend violation.
+
+The coefficient on the post-enforcement years variable is negative and statistically significant for immigrant students, indicating a decline in dropout rates following the adoption of 287(g) MOAs. Specifically, Table 2 shows a coefficient of –0.887 ($p < 0.01$), suggesting
+\input{table2}
+\noindent that immigrant dropout rates fell by approximately 0.89 percentage points on average in the years after enforcement began. This effect is substantively meaningful, particularly given the relatively low baseline dropout rates observed in the sample. The significance of the post-enforcement effect in a specification that accounts for unobserved heterogeneity strengthens the credibility of the causal interpretation. Importantly, the presence of statistically insignificant lead coefficients and the inclusion of event-time indicators help to address concerns about reverse causality or pre-treatment trends, suggesting that the estimated reduction reflects a genuine post-policy effect rather than anticipatory behavior. By contrast, the corresponding estimate for white students is statistically insignificant, suggesting that the observed effect is not driven by broader educational trends but is specific to the immigrant group most exposed to enforcement risk.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{Graph1.pdf} 
+  \caption{\textbf{Event‐study coefficients: impact of ICE enforcement on immigrant dropout rates}}
+\end{figure}
+
+Figure 1 visualizes the estimated dynamic effects using the event study design. The plot shows flat and statistically insignificant coefficients in the pre-treatment period, supporting the parallel trends assumption. Post-treatment coefficients, particularly at two and three years after adoption, are negative and significant, reinforcing the estimated long-run reductions in dropout rates.
+
+\subsection{Placebo Test: White Dropout Rates}
+To assess whether these effects are specific to immigrant students, Table 3 and Figure 2 report estimates for white students, who are unlikely to be directly affected by immigration enforcement. The results show no statistically significant effect on white dropout rates across all specifications, including in Models (3) and (4), which incorporate fixed effects.
+\input{table3}
+
+Event study coefficients for white students in Figure 2 are small and statistically indistinguishable from zero in both pre- and post-treatment periods. These findings support the validity of the identification strategy and suggest that general educational trends or concurrent policy changes do not drive the observed immigrant dropout reductions.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{Graph2.pdf} 
+  \caption{\textbf{Event‐study coefficients: impact of ICE enforcement on white dropout rates}}
+\end{figure}
+
+Figure 3 further reinforces this contrast by overlaying immigrant and white event-study estimates, showing that enforcement effects are concentrated exclusively among immigrant students. The trajectory of the coefficients for immigrant students displays a clear post-treatment decline, particularly two to three years after program implementation, while the coefficients for white students remain flat and statistically indistinguishable from zero throughout the event window. This divergence illustrates not only the policy’s targeted impact but also serves as a visual falsification check: if broader educational disruptions or unobserved shocks were driving dropout trends, we would expect to see similar patterns across both groups. Instead, the immigrant-specific pattern confirms the plausibility of a treatment effect induced by the 287(g) agreements. Moreover, the overlapping graph enhances the credibility of the identification strategy by visually substantiating the parallel pre-trends assumption and isolating the temporal alignment of treatment effects. The figure thus plays a critical role in establishing that the estimated dropout changes are not merely statistical artifacts but are concentrated where theory and policy exposure predict them to be.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{Graph3.pdf} 
+  \caption{\textbf{Event‐study coefficients: impact of ICE enforcement on dropout rates}}
+\end{figure}
+
+\subsection{Heterogeneity by School Level}
+Table 4 examines whether the enforcement effect differs by educational stage. Results show that the estimated treatment effect for middle school students is small and statistically insignificant. In contrast, for high school students, the post-enforcement coefficient is -1.206 and statistically significant at the 1\% level.
+
+This suggests that ICE enforcement partnerships primarily affect older immigrant students, who may be more vulnerable to school withdrawal due to increased responsibilities, fear of family deportation, or direct encounters with law enforcement. These findings are consistent with prior literature on adolescent educational disengagement under heightened enforcement conditions (Suárez-Orozco, 2010).
+\input{table4}
+
+\subsection{Heterogeneity by Enforcement Model}
+Finally, Table 5 presents results stratified by the type of 287(g) MOA: Jail Enforcement Model (JEM) versus Warrant Service Officer (WSO). The estimates reveal stark differences in program impact by enforcement intensity.
+\input{table5}
+
+In counties operating under the more aggressive JEM model, immigrant dropout rates increased by 0.736 percentage points, with the coefficient significant at the 10\% level. In contrast, in WSO counties—where enforcement powers are limited to warrant execution without interrogation—the dropout rate declined by a substantial 2.95 percentage points ($p < 0.05$). This divergent pattern suggests that less discretionary enforcement approaches may mitigate educational disruption more effectively.
+
+No statistically significant effects are observed among white students under either model, reinforcing that the results are driven by immigrant-specific exposure to enforcement risk. 
+
+\section{Discussion}
+This study examined the educational consequences of local immigration enforcement partnerships on immigrant student dropout rates in Texas, particularly under the 287(g) MOA. Building on the foundations of prior work by \citet{dee2020}, \citet{amuedo2015}, and \citet{suarez2010}, this research contributes to a growing literature on how immigration enforcement policies shape youth academic outcomes. The findings reveal that, contrary to the prevailing narrative that enforcement universally deters educational engagement, immigrant dropout rates declined in the years following 287(g) implementation, particularly among high school students. This unexpected result challenges simplified assumptions about immigrant disinvestment from public institutions under threat and suggests that local policy design, family resilience, and school-level interventions may buffer some of the harmful effects typically associated with ICE activity.
+
+The unexpected direction of the main result raises important questions. One potential explanation is a deterrence or “compliance” effect, whereby families respond to enforcement risk by becoming more vigilant about school attendance to avoid drawing attention from authorities. Alternatively, immigrant-serving schools may adopt greater outreach or support in response to enforcement visibility, seeking to retain vulnerable students and counteract the chilling effect of ICE's presence. The disproportionate decline in dropout rates among high school students, compared to middle schoolers, aligns with research by \citet{suarez2010}, who find that older immigrant youth face heightened academic risk during adolescence. It is plausible that high school students, already balancing adult-like responsibilities and exposed to broader media and community messaging, are more responsive to changes in enforcement climate, either by internalizing the need to complete school or receiving targeted school interventions during these critical years.
+
+Another possible factor contributing to the decline in immigrant dropout rates is the influence of Deferred Action for Childhood Arrivals (DACA), which, although not directly measured in this study, may have shaped educational engagement during the study period. By offering eligible undocumented youth protection from deportation and access to work permits, DACA has increased high school attendance, completion, and college attendance \citep{kuka2020}. In Texas, where immigrant communities are sizable and advocacy around DACA has been strong, eligible students may have been further incentivized to remain in school in anticipation of legal stability or economic opportunity. This broader policy backdrop may partially explain the observed decline in dropout rates, particularly when considered alongside localized enforcement deterrence. While 287(g) programs may introduce fear and instability, policies like DACA could simultaneously anchor students’ educational aspirations and reduce the likelihood of disengagement from school.
+
+The distinction between enforcement models further strengthens this study’s contributions. The finding that counties operating under the Jail Enforcement Model (JEM) saw a modest increase in dropout rates, while those under the less invasive Warrant Service Officer (WSO) model experienced a large and significant decline, indicates that the structure and intensity of enforcement partnerships matter. This nuance reinforces the importance of moving beyond binary enforcement measures and accounting for heterogeneity in program execution. The WSO model’s more limited scope–restricted to executing ICE warrants without interrogation powers–may reduce fear-driven disengagement while signaling legitimacy or procedural fairness. In contrast, the broader discretionary powers under JEM may elevate community fear or disrupt household stability in ways that reverse otherwise positive trends. These differences highlight how enforcement mechanisms, not just their presence, shape immigrant educational experiences.
+
+Data credibility is a critical component of this analysis. The use of Texas Education Agency (TEA) dropout records, which adhere to National Center for Education Statistics (NCES) national reporting standards, ensures internal consistency and comparability over time. Unlike self-reported survey data or modeled national estimates, these administrative records allow for precise tracking of subgroup-specific dropout rates. That said, one limitation lies in the absence of individual-level demographic controls or identifiers that could further isolate treatment effects. Nonetheless, the consistency of findings across multiple model specifications, placebo tests, and stratified analyses supports the internal validity of the results. Compared to survey-based research with recall bias or district-level aggregation issues, the TEA data offer a robust foundation for policy evaluation at the county level.
+
+In light of these findings, several spillover effects are plausible. Changes in dropout rates may signal broader shifts in school engagement, trust in public institutions, or future labor market participation. A decrease in dropout rates could reflect increased parental involvement or stronger community-school ties in the face of external threats, echoing patterns observed in \citet{suarez2010}. In contrast, short-term gains can mask long-term costs, such as stress-induced disengagement, mistrust of authorities, or deterioration in mental health among immigrant youth. Future research should assess whether the reduction in dropout rates corresponds to improvements in student well-being, academic performance, or postsecondary outcomes, or whether it reflects strategic attendance behaviors without corresponding educational investment.
+
+\section{Conclusion}
+This study has provided evidence on the educational consequences of local immigration enforcement, focusing on how 287(g) MOAs affect immigrant dropout rates in Texas. Contrary to initial expectations and prior research emphasizing negative effects of enforcement e.g., \citet{amuedo2015}; \citet{dee2020}, the results indicate that immigrant dropout rates actually decline in the years following program implementation. The decline is most pronounced among high school students, suggesting that localized enforcement may alter behavior in complex ways–either by triggering school- or family-level efforts to sustain educational engagement or by inducing a compliance effect amid fear of legal repercussions.
+
+These findings come at a particularly relevant time. As of early 2025, the Trump administration has resumed aggressive immigration policymaking through a series of executive orders focused on reinstating and expanding interior enforcement. Among the priorities outlined are broader applications of 287(g), reactivation of Secure Communities, and an expanded focus on “removal priorities,” including school-age youth in mixed-status households. These developments increase the relevance of this study’s findings, as state and local governments may again be called to partner with federal authorities–often without fully considering the local social and educational ramifications.
+
+The policy implications are multidimensional. On the one hand, this study suggests that enforcement does not inevitably lead to higher school dropout among immigrant students–particularly if implementation is constrained and communities develop compensatory strategies. On the other hand, the heterogeneous effects by enforcement model raise concerns about equity and unintended consequences. Policymakers considering expanded enforcement must weigh not only the potential deterrent value of programs like 287(g) but also the downstream effects on students’ educational trajectories, school climates, and immigrant trust in public institutions.
+
+Beyond educational considerations, immigration enforcement carries wide-ranging economic and social implications. Students who disengage from school are more likely to face limited labor market opportunities, long-term underemployment, and incarceration \citep{suarez2010}. Enforcement-driven instability may deepen racialized inequalities by pushing already vulnerable populations into cycles of marginalization. Conversely, if reduced dropout rates signal increased resilience and policy responsiveness, this would reflect positively on community capacity and adaptability, though such a dynamic deserves further empirical investigation.
+
+This study also underscores the need for balanced policy design that integrates immigration enforcement with educational support. Future research should examine whether similar effects are observed outside Texas, and whether long-term academic achievement, well-being, and labor market participation are meaningfully improved. Further, local education agencies should be included in federal enforcement planning to mitigate potential disruptions and promote student retention. As a global student witnessing the intersection of enforcement, fear, and resilience, I believe that credible data and nuanced analysis–like that presented here–are essential for crafting humane and effective immigration policy that does not overlook the educational futures of those most at risk.
+
+\bibliography{references}
+\end{spacing}
+\end{document}
