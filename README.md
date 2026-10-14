@@ -1,5 +1,5 @@
 Hi, I'm Fred 👋
-[📄 View My Resume](./Resume_Fredrick_Owino.pdf)
+[📄 View My Resume](./Fredrick_Owino_Resume.pdf)
 
 Data-Driven Business Analyst | Quantitative Researcher
 
